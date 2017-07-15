@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd000">
+    tools:context="com.example.kaildyhoang.mycookbookapplication.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewLogo"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="332dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="3">
+        <EditText
+            android:id="@+id/editTextEmailSI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FF9800"
+            android:drawableLeft="@drawable/ic_user_24dp"
+            android:drawablePadding="16dp"
+            android:hint="Username"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:text="dy@gmail.com"/>
+
+        <EditText
+            android:id="@+id/editTextPasswordSI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FF9800"
+            android:drawableLeft="@drawable/ic_lock_24dp"
+            android:drawablePadding="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:text="123456"/>
+
+        <Button
+            android:id="@+id/buttonSignInSI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="#FF6D00"
+            android:text="Login" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't have an account ? "
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/buttonSignUpSI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF6D00"
+                        android:text="Sign Up"
+                        android:drawableRight="@drawable/ic_arrow_forward_black_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/buttonSignInFacebookSI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#033f9f"
+                        android:textColor="#ffffff"
+                       />
+
+                    <Button
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/buttonSignInGmailSI"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="#f75701"
+                        android:textColor="#ffffff"
+                        android:text="Google Mail" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
